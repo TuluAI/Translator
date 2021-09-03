@@ -1,0 +1,80 @@
+[
+  {
+    "english" : "hello",
+    "tulu" : "solmelu"
+  },
+  {
+    "english" : "go",
+    "tulu" : "pola"
+  },
+  {
+    "english" : "job",
+    "tulu": "bele"
+  },
+  {
+    "english" : "time",
+    "tulu" : "porth"
+  },
+  {
+    "english" : "chicken",
+    "tulu" : "kori"
+  },
+  {
+    "english" : "where",
+    "tulu" : "olpa"
+  },
+  {
+    "english" : "come here",
+    "tulu" : "mulpa bala"
+  },
+  {
+    "english" : "come",
+    "tulu" : "bala"
+  },
+  {
+    "english" : "here",
+    "tulu" : "mulpa"
+  },
+  {
+    "english" : "you",
+    "tulu" : "eer"
+  },
+  {
+    "english" : "me",
+    "tulu" : "yaan"
+  },
+  {
+    "english" : "how",
+    "tulu" : "encha"
+  },
+  {
+    "english" : "what",
+    "tulu" : "dada"
+  },
+  {
+    "english" : "why",
+    "tulu" : "daaye"
+  },
+  {
+    "english" : "mine",
+    "tulu" : "yenna"
+  },
+  {
+    "english": "how are you?",
+    "tulu" : "eer encha ullar?"
+  },
+  {
+    "english" : "where are you from?",
+    "tulu" : "eerna oor olpa?"
+  },
+  {
+    "english" : "what is the time?",
+    "tulu" : "porth eth aand?"
+  },
+  {
+    "english" : "you are beautiful",
+    "tulu" : "yeer porlu uller"
+  }
+
+
+]
