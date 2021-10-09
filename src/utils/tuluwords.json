@@ -1,6 +1,7 @@
 [
   {
     "english" : "hello",
+    "hindi" : "नमस्ते",
     "tulu" : "solmelu"
   },
   {
@@ -63,6 +64,11 @@
     "english": "how are you?",
     "tulu" : "eer encha ullar?"
   },
+  {
+    "english": "how are you",
+    "tulu" : "eer encha ullar"
+  },
+  
   {
     "english" : "where are you from?",
     "tulu" : "eerna oor olpa?"
