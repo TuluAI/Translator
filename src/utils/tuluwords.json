@@ -61,6 +61,18 @@
     "tulu" : "yenna"
   },
   {
+    "english":"he",
+    "tulu":"aaye"
+  },
+  {
+    "english":"she",
+    "tulu":"aal"
+  },
+  {
+    "english":"them",
+    "tulu":"akulu"
+  },
+  {
     "english": "how are you?",
     "tulu" : "eer encha ullar?"
   },
@@ -81,6 +93,24 @@
     "english" : "you are beautiful",
     "tulu" : "yeer porlu uller"
   }
-
-
+  ,{
+    "english" : "what are you doing?",
+    "tulu" : "Dada malthondulla?"
+  }
+  ,{
+    "english" : "where is hotel?",
+    "tulu" : "Hotel olpa undu?"
+  }
+  ,{
+    "english" : "where can i get some food?",
+    "tulu" : "Thinre mulu olu thikkundu?"
+  },
+  {
+    "english":"what is this place?",
+    "tulu": "undu ovvu jaaga?"
+  },
+  {
+    "english":"",
+    "tulu":""
+  }
 ]
