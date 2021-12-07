@@ -2,11 +2,18 @@
   {
     "english" : "hello",
     "hindi" : "नमस्ते",
-    "tulu" : "solmelu"
+    "korean-english" : "anneyonghasseyo",
+    "tulu" : "namaskara"
+  },
+  {
+    "english" : "thank you",
+    "tulu" : "solmelu",
+    "korean-english" : "kamsahamnida"
   },
   {
     "english" : "go",
-    "tulu" : "pola"
+    "tulu" : "pola",
+    "marathi-english" : "ja"
   },
   {
     "english" : "job",
@@ -45,6 +52,15 @@
     "tulu" : "yaan"
   },
   {
+    "english" : "my",
+    "tulu" : "yenna"
+  },
+  {
+    "english" : "good",
+    "tulu" : "edde",
+    "korean-english" : "joaya"
+  },
+  {
     "english" : "how",
     "tulu" : "encha"
   },
@@ -69,16 +85,31 @@
     "tulu":"aal"
   },
   {
+    "english" : "yes",
+    "tulu" : "andh",
+    "marathi-english" : "ho",
+    "hindi-english" : "haan",
+    "korean-english" : "ne"
+  },
+  {
+    "english" : "no",
+    "tulu" : "ijji",
+    "marathi-english" : "nako",
+    "korean-english" : "aniyo"
+  },
+  {
     "english":"them",
     "tulu":"akulu"
   },
   {
     "english": "how are you?",
-    "tulu" : "eer encha ullar?"
+    "tulu" : "eer encha ullar?",
+    "marathi-english" : "kasa ahes?"
   },
   {
     "english": "how are you",
-    "tulu" : "eer encha ullar"
+    "tulu" : "eer encha ullar",
+    "marathi-english" : "kasa ahes"
   },
   
   {

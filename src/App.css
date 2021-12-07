@@ -25,8 +25,9 @@ and (min-width : 1224px)  {
     padding: 25px;
     margin: 5px;
     border: solid black 1px;
-    background-color: white;
-}
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray)
+  }
 
    .InfoAlert {
     width: 600px; 
@@ -52,19 +53,76 @@ and (max-width : 600px)
     padding: 25px;
     margin-top: 30px;
     border: solid black 1px; 
-    background-color: white;
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray);
   }
   
   .InfoAlert {
     width: 320px; 
     padding: 25px;
-   /* border: solid black 1px; */ 
+   /* border: solid black 1px; */
     background-color: white;
   }
 
   Alert {
     width: 320px;
   }
+
+  Button {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+  .TranslateBox {
+    width: 600px; 
+    padding: 25px;
+    margin: 5px;
+    border: solid black 1px;
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray)
+  }
+
+   .InfoAlert {
+    width: 600px; 
+    padding: 25px;
+    margin: 5px;
+    /* border: solid black 1px; */
+    background-color: white;
+  }
+ 
+
+  Button {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+  .TranslateBox {
+    width: 600px; 
+    padding: 25px;
+    margin: 5px;
+    border: solid black 1px;
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray)
+  }
+
+   .InfoAlert {
+    width: 600px; 
+    padding: 25px;
+    margin: 5px;
+    /* border: solid black 1px; */
+    background-color: white;
+  }
+ 
 
   Button {
     padding: 5px;
@@ -87,6 +145,7 @@ and (max-width : 600px)
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;

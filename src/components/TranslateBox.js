@@ -73,6 +73,7 @@ function  TranslateBox(){
             <option value="english">English</option>
             <option value="hindi">Hindi</option>
             <option value="hindi-english">Hindi (English Text)</option>
+            <option value="korean-english">Korean (English Text)</option>
             <option value="marathi">Marathi</option>
             <option value="marathi-english">Marathi (English Text)</option>
             <option value="tulu">Tulu</option>
