@@ -11,6 +11,10 @@
     "korean-english" : "kamsahamnida"
   },
   {
+    "english" : "you are one good human being",
+    "tulu" : "eer onji edde jana"
+  },
+  {
     "english" : "go",
     "tulu" : "pola",
     "marathi-english" : "ja"
@@ -111,7 +115,10 @@
     "tulu" : "eer encha ullar",
     "marathi-english" : "kasa ahes"
   },
-  
+  {
+    "english" : "fuck you",
+    "tulu" : "potyer nik"
+  },
   {
     "english" : "where are you from?",
     "tulu" : "eerna oor olpa?"
@@ -122,19 +129,20 @@
   },
   {
     "english" : "you are beautiful",
+    "hindi-english" : "aap khoobsurat hain",
     "tulu" : "yeer porlu uller"
   }
   ,{
     "english" : "what are you doing?",
-    "tulu" : "Dada malthondulla?"
+    "tulu" : "dada malthondulla?"
   }
   ,{
-    "english" : "where is hotel?",
-    "tulu" : "Hotel olpa undu?"
+    "english" : "where is the hotel?",
+    "tulu" : "hotel olpa undu?"
   }
   ,{
     "english" : "where can i get some food?",
-    "tulu" : "Thinre mulu olu thikkundu?"
+    "tulu" : "thinyere mulpa olu thikkundu?"
   },
   {
     "english":"what is this place?",

@@ -1,10 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.cdnfonts.com/css/league-spartan');
+
 .App {
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.App h1, .Share {
+  color: white;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.logo {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.blue {
+  color: lightblue;        
+}
+
+Alert, Link {
+  word-break: break-word;
+}
+
+.btn {
+  padding: 5px;
+  margin-top: 10px;
 }
 
 Form {
@@ -25,8 +50,9 @@ and (min-width : 1224px)  {
     padding: 25px;
     margin: 5px;
     border: solid black 1px;
+    word-wrap: break-word;
     /* background-color: white; */
-    background-image: linear-gradient(lightblue, gray)
+    background-image: linear-gradient(lightblue, gray);
   }
 
    .InfoAlert {
@@ -39,6 +65,15 @@ and (min-width : 1224px)  {
  
 
   Button {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .TextArea {
+    display: inline-flex;
+  }
+
+  Form.Group {
     padding: 5px;
     margin: 5px;
   }
