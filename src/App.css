@@ -55,6 +55,7 @@ and (min-width : 1224px)  {
     background-image: linear-gradient(lightblue, gray);
   }
 
+
    .InfoAlert {
     width: 600px; 
     padding: 25px;
