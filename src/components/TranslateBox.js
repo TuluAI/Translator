@@ -13,9 +13,10 @@ function  TranslateBox(){
   const [fromLanguage, setFromLanguage] = useState();
   const [fromSpeechValue, setFromSpeechValue] = useState();
   const [toLanguage, setToLanguage] = useState();
+  const [translatedEnglishVersion, setTranslatedEnglishVersion] = useState('');
   const [language, setLanguage] = useState();
   const [fromLangWord, setFromLangWord] = useState('');
-  const [translatedWord, setTranslatedWord] = useState();
+  const [translatedWord, setTranslatedWord] = useState('');
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [shareLink, setShareLink] = useState();
@@ -73,6 +74,7 @@ function  TranslateBox(){
   const handleChange = (e) => {
       e.preventDefault();
       setFromLanguage(fromLangRef.current.value);
+    let engv = `${toLangRef.current.value}-english`; 
       setToLanguage(toLangRef.current.value);
       setFromLangWord(e.target.value);
       let len = e.target.value.length;
@@ -82,7 +84,14 @@ function  TranslateBox(){
       console.log(fromLangWord);
       if(len != 0){
         if(word){
-          setTranslatedWord(word[toLanguage]);
+          
+        setTranslatedWord(word[toLanguage]);
+         if(word[engv]){
+           setTranslatedEnglishVersion(word[engv]);
+         }
+        else{
+           setTranslatedEnglishVersion("");   
+         }
           setFromLangWord(e.target.value)
           console.log(fromLangWord.tulu);
           setError(false);
@@ -98,6 +107,7 @@ function  TranslateBox(){
         else {
           setTranslatedWord("");
           setFromLangWord("");
+          setTranslatedEnglishVersion("");
           setError(true);
           setSuccess(false);
           setButton(true);
@@ -135,12 +145,19 @@ function  TranslateBox(){
     //else{ */
     //setTranslatedWord(toLangWordRef.current.value);
     if(toLangWordRef.current.value != undefined){
+      let engv = `${toLangRef.current.value}-english`; 
       setFromLanguage(fromLangRef.current.value);
       setFromLangWord(fromLangWordRef.current.value);
       //setToLanguage(e.target.value); 
       const word = tuluwords.find((w) => w[fromLanguage] === fromLangWord.toLowerCase().trim());
       if(word){
         setTranslatedWord(word[e.target.value]);
+        if(word[engv]){
+           setTranslatedEnglishVersion(word[engv]);
+         }
+        else{
+           setTranslatedEnglishVersion("");   
+         }
         const shareval = `https://translator.tuluai.tech/share?fl=${fromLanguage}&flw=${fromLangWord}&tl=${toLanguage}&tlw=${word[toLanguage]}`;
           setShareLink(shareval);
       }  
@@ -192,7 +209,7 @@ function  TranslateBox(){
             <option value="sanskrit-english">Sanskrit (English Text)</option>
             <option value="tulu">Tulu</option>
           </Form.Control> 
-          <Form.Control size="lg" as="textarea" rows={5} placeholder={translatedWord} ref={toLangWordRef} readOnly/>
+          <Form.Control size="lg" as="textarea" rows={5} placeholder={translatedWord + "\n" + "\n" + translatedEnglishVersion} ref={toLangWordRef} readOnly/>
         </Form.Group>
     </div>
         {button ? <center><Button onClick={addToDatabase}>Submit Feedback</Button></center> : null}

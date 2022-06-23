@@ -6,7 +6,7 @@
   font-family: 'Varela Round', sans-serif;
 }
 
-.App h1, .Share {
+.App h1, .App h4, .Share {
   color: white;
 }
 
@@ -46,7 +46,7 @@ Form {
 and (min-width : 1224px)  {
 
   .TranslateBox {
-    width: 600px; 
+    width: 800px; 
     padding: 25px;
     margin: 5px;
     border: solid black 1px;
@@ -60,6 +60,7 @@ and (min-width : 1224px)  {
     width: 600px; 
     padding: 25px;
     margin: 5px;
+    text-align: justify;
     /* border: solid black 1px; */
     background-color: white;
   }
@@ -72,11 +73,13 @@ and (min-width : 1224px)  {
 
   .TextArea {
     display: inline-flex;
+    margin: 5px;
   }
 
-  Form.Group {
+  .form-group {
+    width: 370px;
     padding: 5px;
-    margin: 5px;
+    margin: 0px;
   }
 }
 
@@ -96,6 +99,7 @@ and (max-width : 600px)
   .InfoAlert {
     width: 320px; 
     padding: 25px;
+    text-align: justify;
    /* border: solid black 1px; */
     background-color: white;
   }
