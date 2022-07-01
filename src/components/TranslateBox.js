@@ -1,12 +1,15 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import { Dropdown, DropdownButton, Form, Alert, Button, Modal, Jumbotron } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import tuluwords from '../utils/tuluwords.json';
 import '../App.css';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 //utils
 import { db } from '../utils/Firebase';
+
+//datasets
+import tuluwords from '../datasets/tuluwords.json';
+import tuluailanguages from '../datasets/tuluailanguages.json';
 
 function  TranslateBox(){
   //const toTranslate = useRef();
@@ -28,7 +31,15 @@ function  TranslateBox(){
   const toLangRef = useRef();
   const fromLangWordRef = useRef();
   const toLangWordRef = useRef();
+
+  let languageOptions = null;
+  let languageList = tuluailanguages.filter(languages => languages.language);
+  let languages = languageList.map(languages => languages.language);
+  languageOptions = languages.map((languages) => 
+      <option key={language} value={languages}>{languages}</option>)
   //const [toTranslate, setToTranslate] = useState();
+
+
   const {
     transcript,
     listening,
@@ -73,9 +84,9 @@ function  TranslateBox(){
   }
   const handleChange = (e) => {
       e.preventDefault();
-      setFromLanguage(fromLangRef.current.value);
+      setFromLanguage(fromLangRef.current.value.toLowerCase());
     let engv = `${toLangRef.current.value}-english`; 
-      setToLanguage(toLangRef.current.value);
+      setToLanguage(toLangRef.current.value.toLowerCase());
       setFromLangWord(e.target.value);
       let len = e.target.value.length;
       //setFromLangWord(e.target.value);
@@ -179,7 +190,7 @@ function  TranslateBox(){
         <Form.Group>
           <Form.Label>Translate From</Form.Label>
           <Form.Control as="select" ref={fromLangRef}>
-            <option>Select Language</option>
+            {/*  <option>Select Language</option>
             <option value="english">English</option>
         <option value="french">French</option>
         <option value="gujarati-english">Gujarati (English Text)</option>
@@ -189,7 +200,8 @@ function  TranslateBox(){
             <option value="marathi">Marathi</option>
             <option value="marathi-english">Marathi (English Text)</option>
             <option value="sanskrit-english">Sanskrit (English Text)</option>
-            <option value="tulu">Tulu</option>
+            <option value="tulu">Tulu</option> */}
+            { languageOptions }
           </Form.Control>  
           <Form.Control size="lg" as="textarea" rows={5} onChange={handleChange} placeholder={fromSpeechValue} ref={fromLangWordRef}  />
         </Form.Group>

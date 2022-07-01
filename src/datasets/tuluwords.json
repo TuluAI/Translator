@@ -10,16 +10,19 @@
   },
   {
     "english": "new year",
-    "tulu": "bisu parba"
+    "tulu": "ಬಿಸು ಪರ್ಬ",
+    "tulu-english": "bisu parba"
   },
   {
     "english" : "thank you",
-    "tulu" : "solmelu",
+    "tulu" : "ಸೊಲ್ಮೆಲು",
+    "tulu-english" : "solmelu",
     "korean-english" : "kamsahamnida"
   },
   {
     "english" : "you are one good human being",
-    "tulu" : "eer onji edde jana"
+    "tulu" : "ಏರ್ ಒಂಜಿ ಎದ್ದೆ ಜನ",
+    "tulu-english" : "eer onji edde jana"
   },
   {
     "english" : "go",
@@ -45,15 +48,18 @@
   },
   {
     "english" : "come here",
-    "tulu" : "mulpa bala"
+    "tulu" : "ಮುಲ್ಪ ಬಲ",
+    "tulu-english" : "mulpa bala"
   },
   {
     "english" : "come",
-    "tulu" : "bala"
+    "tulu" : "ಬಲ",
+    "tulu-english" : "bala"
   },
   {
     "english" : "here",
-    "tulu" : "mulpa"
+    "tulu" : "ಮುಲ್ಪ",
+    "tulu-english" : "mulpa"
   },
   {
     "english" : "you",
@@ -162,7 +168,8 @@
     "gujarati-english": "hu tane prem karu che",
     "malayalam-english" : "njan ninne premikunnu",
     "marathi-english" : "mi tumcha prem kartho",
-     "tulu" : "enk yeerna mith mowke und"
+    "tulu": "ಎನ್ಕೆ ಯೇರ್ನ ಮಿಥ್ ಮೌಕೆ ಉಂಡ್",
+    "tulu-english" : "enk yeerna mith mowke und"
   },
   {
     "english":"",
