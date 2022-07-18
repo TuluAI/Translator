@@ -20,6 +20,7 @@ function  TranslateBox(){
   const [language, setLanguage] = useState();
   const [fromLangWord, setFromLangWord] = useState('');
   const [translatedWord, setTranslatedWord] = useState('');
+  const [translated, setTranslated] = useState('');
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [shareLink, setShareLink] = useState();
@@ -95,13 +96,19 @@ function  TranslateBox(){
       console.log(fromLangWord);
       if(len != 0){
         if(word){
-          
         setTranslatedWord(word[toLanguage]);
          if(word[engv]){
            setTranslatedEnglishVersion(word[engv]);
+          const translated = `${word[toLanguage]} \n 
+          \n
+          \n
+          ${word[engv]}`;
+          setTranslated(translated);
          }
         else{
-           setTranslatedEnglishVersion("");   
+           setTranslatedEnglishVersion("");  
+          const translated = `${word[toLanguage]}`;
+          setTranslated(translated);
          }
           setFromLangWord(e.target.value)
           console.log(fromLangWord.tulu);
@@ -118,7 +125,8 @@ function  TranslateBox(){
         else {
           setTranslatedWord("");
           setFromLangWord("");
-          setTranslatedEnglishVersion("");
+         setTranslatedEnglishVersion("");
+          setTranslated("");
           setError(true);
           setSuccess(false);
           setButton(true);
@@ -190,17 +198,6 @@ function  TranslateBox(){
         <Form.Group>
           <Form.Label>Translate From</Form.Label>
           <Form.Control as="select" ref={fromLangRef}>
-            {/*  <option>Select Language</option>
-            <option value="english">English</option>
-        <option value="french">French</option>
-        <option value="gujarati-english">Gujarati (English Text)</option>
-            <option value="hindi">Hindi</option>
-            <option value="hindi-english">Hindi (English Text)</option>
-         <option value="malayalam-english">Malayalam (English Text)</option>
-            <option value="marathi">Marathi</option>
-            <option value="marathi-english">Marathi (English Text)</option>
-            <option value="sanskrit-english">Sanskrit (English Text)</option>
-            <option value="tulu">Tulu</option> */}
             { languageOptions }
           </Form.Control>  
           <Form.Control size="lg" as="textarea" rows={5} onChange={handleChange} placeholder={fromSpeechValue} ref={fromLangWordRef}  />
@@ -221,7 +218,7 @@ function  TranslateBox(){
             <option value="sanskrit-english">Sanskrit (English Text)</option>
             <option value="tulu">Tulu</option>
           </Form.Control> 
-          <Form.Control size="lg" as="textarea" rows={5} placeholder={translatedWord + "\n" + "\n" + translatedEnglishVersion} ref={toLangWordRef} readOnly/>
+          <Form.Control size="lg" as="textarea" rows={5} placeholder={translated} ref={toLangWordRef} readOnly/>
         </Form.Group>
     </div>
         {button ? <center><Button onClick={addToDatabase}>Submit Feedback</Button></center> : null}
